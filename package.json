@@ -1,0 +1,37 @@
+{
+  "name": "clean-architecture-ts",
+  "version": "1.0.0",
+  "description": "GraphQL, Clean Architecture and TypeScript",
+  "main": "main/index.ts",
+  "scripts": {
+    "start": "node dist/main/server.js",
+    "build": "rimraf dist && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loxt/clean-architecture-ts.git"
+  },
+  "keywords": [],
+  "author": "Emannuel Loxt, Rodrigo Manguinho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/loxt/clean-architecture-ts/issues"
+  },
+  "homepage": "https://github.com/loxt/clean-architecture-ts#readme",
+  "_moduleAliases": {
+    "@": "dist"
+  },
+  "dependencies": {
+    "apollo-server-express": "^2.19.1",
+    "express": "^4.17.1",
+    "graphql": "^15.4.0",
+    "module-alias": "^2.2.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.9",
+    "@types/graphql": "^14.5.0",
+    "@types/node": "^14.14.16",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.1.3"
+  }
+}
